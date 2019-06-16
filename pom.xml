@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>spring-cloud-common-api</module>
         <module>spring-cloud-netflix-eureka</module>
         <module>spring-cloud-netflix-ribbon</module>
     </modules>
