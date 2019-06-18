@@ -13,7 +13,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>spring-cloud-zuul-example</module>
+        <module>spring-cloud-netflix-zuul-example</module>
     </modules>
 
 </project>

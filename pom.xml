@@ -13,6 +13,7 @@
         <module>spring-cloud-common-api</module>
         <module>spring-cloud-netflix-eureka</module>
         <module>spring-cloud-netflix-ribbon</module>
+        <module>spring-cloud-netflix-hystrix</module>
         <module>spring-cloud-netflix-zuul</module>
     </modules>
 

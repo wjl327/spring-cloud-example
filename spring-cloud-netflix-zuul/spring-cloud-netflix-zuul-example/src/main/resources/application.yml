@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: spring-cloud-netflix-zuul-example
+
+server:
+  port: 8000
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+#      defaultZone: http://${eureka.instance.hostname}:8761/eureka/,http://${eureka.instance.hostname}:8762/eureka/
+
+zuul:
+  routes:
+    api-a:
+      path: /feign/**
+      serviceId: spring-cloud-eureka-feign-consumer
+    api-b:
+      path: /ribbon/**
+      serviceId: spring-cloud-eureka-ribbon-consumer
