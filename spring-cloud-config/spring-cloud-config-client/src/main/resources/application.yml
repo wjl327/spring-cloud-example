@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: spring-cloud-config-client
+  cloud:
+    config:
+      uri: http://localhost:35000/
+      label: master
+      profile: dev
+
+server:
+  port: 35100
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+
+serverName: abc

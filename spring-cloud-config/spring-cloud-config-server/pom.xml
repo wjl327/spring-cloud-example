@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>spring-cloud-eureka-server</artifactId>
+    <artifactId>spring-cloud-config-server</artifactId>
     <description>Demo project for Spring Cloud Config Server</description>
 
     <dependencies>
