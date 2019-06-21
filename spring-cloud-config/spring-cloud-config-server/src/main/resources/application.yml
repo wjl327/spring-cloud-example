@@ -2,12 +2,13 @@ spring:
   application:
     name: spring-cloud-config-server
   cloud:
-      config:
-        server:
-          git:
-            uri: https://github.com/wjl327/SpringCloudConfig/
-            searchPaths: respo
-            label: master
+    config:
+      server:
+        git:
+          uri: https://github.com/wjl327/SpringCloudConfig
+          searchPaths: respo
+          username:
+          password:
 
 server:
   port: 35000
