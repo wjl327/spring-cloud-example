@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: spring-cloud-zipkin-show
+  zipkin:
+    base-url: http://localhost:9411
+
+server:
+  port: 36001
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/

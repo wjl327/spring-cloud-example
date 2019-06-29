@@ -1,7 +1,6 @@
 package com.wjl327.zipkin.zdb.controller;
 
 
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -24,7 +23,7 @@ public class ZdbController {
     }
 
     @RequestMapping(value = "/getUserData", method = RequestMethod.GET)
-    public String GetUserData(String name) {
+    public String getUserData(String name) {
         int cost = new Random().nextInt(1000);
         try {
             Thread.sleep(cost);
