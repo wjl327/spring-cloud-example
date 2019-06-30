@@ -1,9 +1,9 @@
 spring:
   application:
-    name: spring-cloud-ribbon-hystrix-consumer
+    name: spring-cloud-hystrix-dashboard
 
 server:
-  port: 33001
+  port: 35001
 
 eureka:
   instance:
@@ -21,3 +21,12 @@ management:
       cors:
         allowed-origins: "*"
         allowed-methods: "*"
+
+turbine:
+  app-config: spring-cloud-ribbon-hystrix-consumer,spring-cloud-feign-hystrix-consumer
+  aggregator:
+    clusterConfig: default
+  clusterNameExpression: new String("default")
+  combine-host: true
+  instanceUrlSuffix:
+    default: actuator/hystrix.stream

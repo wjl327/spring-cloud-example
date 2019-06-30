@@ -15,6 +15,7 @@
     <modules>
         <module>spring-cloud-ribbon-hystrix-consumer</module>
         <module>spring-cloud-feign-hystrix-consumer</module>
+        <module>spring-cloud-hystrix-dashboard</module>
     </modules>
 
 </project>
