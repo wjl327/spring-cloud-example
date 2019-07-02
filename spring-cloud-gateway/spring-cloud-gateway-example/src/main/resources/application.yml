@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: spring-cloud-gateway-example
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: first_route
+          uri: lb://spring-cloud-eureka-feign-consumer
+          predicates:
+          - Path=/feign/**
+          filters:
+          - StripPrefix=1
+
+server:
+  port: 8000
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+#      defaultZone: http://${eureka.instance.hostname}:8761/eureka/,http://${eureka.instance.hostname}:8762/eureka/
