@@ -6,13 +6,13 @@ spring:
       discovery:
         locator:
           enabled: true
-      routes:
-        - id: first_route
-          uri: lb://spring-cloud-eureka-feign-consumer
-          predicates:
-          - Path=/feign/**
-          filters:
-          - StripPrefix=1
+#      routes:
+#        - id: first_route
+#          uri: lb://spring-cloud-eureka-feign-consumer
+#          predicates:
+#          - Path=/feign/**
+#          filters:
+#          - StripPrefix=1
 
 server:
   port: 8000
